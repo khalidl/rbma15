@@ -436,14 +436,12 @@ nav {
     #film .film-wrap iframe {
       opacity: 1;
       width: 100%;
-      display: block;
-      z-index: 99999; }
+      display: none; }
     #film .film-wrap video {
-      display: none;
+      display: block;
       max-width: 150%;
       width: 150%;
-      left: -50%;
-      z-index: 9; }
+      left: -50%; }
 
 #book {
   position: absolute;

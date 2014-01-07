@@ -1,50 +1,3 @@
- 	var vid_height = measureVideo();
-	var vid_width = $(window).width();
-
- 	function onPlayerReady(event){
-		player.playVideo();
-	}
-
-
- //call youtube api
-	var tag = document.createElement('script');
-	tag.src = "https://www.youtube.com/iframe_api";
-	var firstScriptTag = document.getElementsByTagName('script')[0];
-	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-	var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: vid_height,
-          width: vid_width,
-          videoId: '8dtZsnPKeo8',
-          playerVars: {
-          	controls: 0,
-          	modestbranding: 1,
-          	loop: 1
-          },
-          events: {
-            //'onReady': onPlayerReady,
-            //'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      //USED TO MESAURE SCREEN SIZE TO BE USED FOR VIDEO SIZE
-	function measureVideo(){
-		var rect = document.getElementById("film").getBoundingClientRect();
-		if (rect.height){
-			elementHeight = rect.height;
-		}
-		else{
-			elementHeight = rect.bottom - rect.height; //derive height
-		}
-
-		return elementHeight;
-	}
-	
-
-
 
  $(document).ready(function() {
 
@@ -72,8 +25,6 @@ Video background not fading out on video play button click
 	
 
 	function swapVideo(vid){
-		alert('swap');
-		player.playVideo();
 		var height = measureVideo();
 		var width = $(window).width();
 		var target = vid.parent().parent();
@@ -90,13 +41,13 @@ Video background not fading out on video play button click
 
 		*/
 		//display controls on mobile video
-		/*
-		if (win_width < 725){
+		
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			$('#film').find('#embed').html('<iframe frameborder="0" scrolling="no" ' +
 										'seamless="seamless" webkitallowfullscreen="webkitAllowFullScreen" ' +
 										'mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen" ' +
 										'id="rbmaplayer" width="' + width + '" height="' + height + '" ' +
-										'src="http://www.youtube.com/embed/8dtZsnPKeo8?enablejsapi=1&amp;origin=*&amp;autoplay=0&amp;loop=1&amp;hd=1&amp;' +
+										'src="http://www.youtube.com/embed/8dtZsnPKeo8?enablejsapi=1&amp;origin=*&amp;autoplay=1&amp;loop=1&amp;hd=1&amp;' +
 										'controls=1&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;' +
 										'rel=0&amp;playlist=O8hi7CaqE8A"></iframe>');
 		}
@@ -106,20 +57,29 @@ Video background not fading out on video play button click
 										'seamless="seamless" webkitallowfullscreen="webkitAllowFullScreen" ' +
 										'mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen" ' +
 										'id="rbmaplayer" width="' + width + '" height="' + height + '" ' +
-										'src="http://www.youtube.com/embed/8dtZsnPKeo8?enablejsapi=1&amp;origin=*&amp;autoplay=0&amp;loop=1&amp;hd=1&amp;' +
+										'src="http://www.youtube.com/embed/8dtZsnPKeo8?enablejsapi=1&amp;origin=*&amp;autoplay=1&amp;loop=1&amp;hd=1&amp;' +
 										'controls=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;' +
 										'rel=0&amp;playlist=O8hi7CaqE8A"></iframe>');
 		}
-		*/
 		
 		target.find('iframe').show();
 		$('#film').find('#embed').css({
 			zIndex: '9'
 		});
-		player.playVideo();
 	}
 
-	
+	//USED TO MESAURE SCREEN SIZE TO BE USED FOR VIDEO SIZE
+	function measureVideo(){
+		var rect = document.getElementById("film").getBoundingClientRect();
+		if (rect.height){
+			elementHeight = rect.height;
+		}
+		else{
+			elementHeight = rect.bottom - rect.height; //derive height
+		}
+
+		return elementHeight;
+	}
 
 	//PICKS RANDOM BACKGROUND TO DISPLAY ON TITLE SCREEN
 	function swapBackground(string){
@@ -420,7 +380,7 @@ Video background not fading out on video play button click
 	});
 
 	//make sure youtube html is empty on page load
-	//$('#film').find('#embed').empty();
+	$('#film').find('#embed').empty();
 
 	//swap background image
 	swapBackground(backgrounds);
