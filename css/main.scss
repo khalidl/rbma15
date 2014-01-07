@@ -491,7 +491,7 @@ textarea {
         z-index: 9;
         h1{
             text-transform: uppercase;
-            font-size: 5em;
+            font-size: 4em;
             line-height: 1;
             width: 80%;
             text-align: center;
@@ -561,8 +561,9 @@ textarea {
         z-index: 9;
         h1{
             text-transform: uppercase;
-            font-size: 5em;
+            font-size: 4em;
             line-height: 1;
+            margin-bottom: 10px;
         }
         h2{
             line-height: 1.5;
@@ -570,11 +571,21 @@ textarea {
             left: 25%;
             right: 25%;
             text-align: center;
-            position: absolute;
-            bottom: 5%;
+            position: relative;
+            margin-top: 0;
+        }
+    }
+    .foot{
+        position: absolute;
+        bottom: 10%;
+        width: 40%;
+        left: 30%;
+        right: 30%;
+        h2{
+            font-size: 1.5em;
             a{
-                text-decoration: underline;
                 color: gray;
+                text-decoration: underline;
                 &:hover{
                     color: black;
                 }
@@ -601,16 +612,16 @@ textarea {
                 //width, but since image wrapper is 200% width, we divide
                 //this by two
                 left: 15%;
-                top: 25%;
+                top: 35%;
             }
             &.rightbook{
 
-                width: 15%;
+                width: 13%;
                 //again, this is placed 100% to the right of the first
                 //image, but since we are at 200% width, we divide by
                 //two
                 margin-left: 50%;
-                top: 20%;
+                top: 34%;
             }
             &:hover{
                 //margin-top: -5px;
@@ -870,18 +881,30 @@ textarea {
             left: 25%;
             right: 25%;
             text-align: center;
-            position: absolute;
-            bottom: 5%;
+            position: relative;
+            margin-top: 1%;
             font-size: 2em;
+        }
+    }
+
+    .foot{
+        position: absolute;
+        bottom: 10%;
+        width: 40%;
+        left: 30%;
+        right: 30%;
+        h2{
+            font-size: 1.5em;
             a{
-                text-decoration: underline;
                 color: gray;
+                text-decoration: underline;
                 &:hover{
                     color: black;
                 }
             }
         }
     }
+
     .book-wrapper{
         width: 200%;
         height: 100%;
@@ -902,7 +925,7 @@ textarea {
                 //width, but since image wrapper is 200% width, we divide
                 //this by two
                 left: 15%;
-                top: 25%;
+                top: 30%;
             }
             &.rightbook{
 
@@ -911,7 +934,7 @@ textarea {
                 //image, but since we are at 200% width, we divide by
                 //two
                 margin-left: 50%;
-                top: 18%;
+                top: 30%;
             }
             &:hover{
                 //margin-top: -5px;
@@ -1046,6 +1069,7 @@ textarea {
 
 @media only screen and (max-width: 1000px), screen and (max-device-width: 1000px){
 
+
     #title{
         position: absolute;
         z-index: -1;
@@ -1150,8 +1174,26 @@ textarea {
             left: 25%;
             right: 25%;
             text-align: center;
-            position: absolute;
-            bottom: 10%;
+            position: relative;
+            margin-top: 1%;
+        }
+    }
+
+    .foot{
+        position: absolute;
+        bottom: 10%;
+        width: 40%;
+        left: 30%;
+        right: 30%;
+        h2{
+            font-size: 1.5em;
+            a{
+                color: gray;
+                text-decoration: underline;
+                &:hover{
+                    color: black;
+                }
+            }
         }
     }
     .book-wrapper{
@@ -1174,7 +1216,7 @@ textarea {
                 //width, but since image wrapper is 200% width, we divide
                 //this by two
                 left: 12%;
-                top: 20%;
+                top: 35%;
             }
             &.rightbook{
                 width: 17%;
@@ -1182,7 +1224,7 @@ textarea {
                 //image, but since we are at 200% width, we divide by
                 //two
                 margin-left: 53%;
-                top: 18%;
+                top: 35%;
             }
             &:hover{
                 //margin-top: -5px;
@@ -1366,23 +1408,11 @@ textarea {
         margin: 0;
         width: 100%;
         height: 100%;
+        -webkit-overflow-scrolling: touch;
     }
 
     #nav-burger{
-        position: fixed;
-        left: 20px;
-        top: 15px;
-        width: 40px;
-        height: 40px;
-        z-index: 999;
-        opacity: 1;
-        display: none;
-        img{
-            max-width: 100%;
-            &:hover{
-                opacity: 0.6;
-            }
-        }
+        display: none !important;
     }
 
     nav{
@@ -1411,10 +1441,11 @@ textarea {
         .nav-top-right{
             display: none;
         }
-        #nav-bottom{
-            display: none;
-        }
     }
+
+    #nav-bottom{
+            display: none !important;
+        }
 
 
     #title{
@@ -1483,14 +1514,17 @@ textarea {
         .text{
             margin-top: 10%;
             h1{
-                font-size: 4em;
+                font-size: 3.5em;
             }
             h2{
-                font-size: 2em;
+                font-size: 1.2em;
+            }
+            h3{
+                margin-top: 25%;
             }
             img{
                 max-width: 15%;
-                margin-top: 5%;
+                margin-top: 25%;
                 &:hover{
                     opacity: 0.5;
                 }
@@ -1519,7 +1553,7 @@ textarea {
     background-color: white;
     text-align: center;
     .text{
-        margin-top: 25%;
+        margin-top: 10%;
         text-align: center;
         color: black;
         h1{
@@ -1534,11 +1568,25 @@ textarea {
             left: 25%;
             right: 25%;
             text-align: center;
-            position: absolute;
-            bottom: 10%;
+            position: relative;
+            margin-top: 1%;
+        }
+    }
+
+    .foot{
+        position: absolute;
+        bottom: 10%;
+        width: 40%;
+        left: 30%;
+        right: 30%;
+        h2{
+            font-size: 1.2em;
             a{
-                text-decoration: underline;
                 color: gray;
+                text-decoration: underline;
+                &:hover{
+                    color: black;
+                }
             }
         }
     }
@@ -1563,7 +1611,7 @@ textarea {
                 //width, but since image wrapper is 200% width, we divide
                 //this by two
                 left: 20%;
-                top: 35%;
+                top: 40%;
             }
             &.rightbook{
                 display: none;
@@ -1599,7 +1647,10 @@ textarea {
         .text{
             margin-top: 10%;
             h1{
-                font-size: 4em;
+                font-size: 3.5em;
+                max-width: 80%;
+                margin-left: 10%;
+                margin-right: 10%;
             }
         }
         .extras-container{
@@ -1684,7 +1735,7 @@ textarea {
         .text{
             margin-top: 10%;
             h1{
-                font-size: 4em;
+                font-size: 3.5em;
             }
             p{
                 padding-right: 10%;
@@ -1740,21 +1791,8 @@ textarea {
         height: 100%;
     }
 
-    #nav-burger{
-        position: fixed;
-        left: 20px;
-        top: 15px;
-        width: 40px;
-        height: 40px;
-        z-index: 999;
-        opacity: 1;
-        display: none;
-        img{
-            max-width: 100%;
-            &:hover{
-                opacity: 0.6;
-            }
-        }
+   #nav-burger{
+        display: none !important;
     }
 
     nav{
@@ -1838,7 +1876,7 @@ textarea {
         .text{
             margin-top: 25%;
             h1{
-                font-size: 3.5em;
+                font-size: 3em;
             }
             h2{
                 font-size: 1.5em;
@@ -1876,7 +1914,7 @@ textarea {
         color: black;
         h1{
             text-transform: uppercase;
-            font-size: 3.5em;
+            font-size: 3em;
             line-height: 1;
         }
         h2{
@@ -1886,11 +1924,25 @@ textarea {
             left: 25%;
             right: 25%;
             text-align: center;
-            position: absolute;
-            bottom: 10%;
+            position: relative;
+            margin-top: 1%;
+        }
+    }
+
+    .foot{
+        position: absolute;
+        bottom: 10%;
+        width: 40%;
+        left: 30%;
+        right: 30%;
+        h2{
+            font-size: 1em;
             a{
-                text-decoration: underline;
                 color: gray;
+                text-decoration: underline;
+                &:hover{
+                    color: black;
+                }
             }
         }
     }
@@ -1915,7 +1967,7 @@ textarea {
                 //width, but since image wrapper is 200% width, we divide
                 //this by two
                 left: 20%;
-                top: 35%;
+                top: 40%;
             }
             &.rightbook{
                 display: none;
@@ -1960,7 +2012,7 @@ textarea {
         .text{
             margin-top: 15%;
             h1{
-                font-size: 3.5em;
+                font-size: 3em;
             }
             p{
                 font-size: 0.8em;
@@ -2087,7 +2139,7 @@ textarea {
 
             }
             h1{
-                font-size: 2.5em;
+                font-size: 2em;
             }
         }
     }
@@ -2166,11 +2218,32 @@ textarea {
             left: 25%;
             right: 25%;
             text-align: center;
-            position: absolute;
-            bottom: 10%;
+            position: relative;
+            margin-top: 1%;
+            &.view-more{
+                position: absolute;
+                bottom: 10%;
+                a{
+                    text-decoration: underline;
+                    color: gray;
+                }
+            }
+        }
+    }
+    .foot{
+        position: absolute;
+        bottom: 10%;
+        width: 40%;
+        left: 30%;
+        right: 30%;
+        h2{
+            font-size: 0.8em;
             a{
-                text-decoration: underline;
                 color: gray;
+                text-decoration: underline;
+                &:hover{
+                    color: black;
+                }
             }
         }
     }
@@ -2195,7 +2268,7 @@ textarea {
                 //width, but since image wrapper is 200% width, we divide
                 //this by two
                 left: 15%;
-                top: 25%;
+                top: 40%;
             }
             &.rightbook{
                 display: none;
