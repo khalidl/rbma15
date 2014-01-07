@@ -436,11 +436,14 @@ nav {
     #film .film-wrap iframe {
       opacity: 1;
       width: 100%;
-      display: none; }
+      display: block;
+      z-index: 99999; }
     #film .film-wrap video {
+      display: none;
       max-width: 150%;
       width: 150%;
-      left: -50%; }
+      left: -50%;
+      z-index: 9; }
 
 #book {
   position: absolute;
@@ -1174,7 +1177,12 @@ nav {
     height: 100%;
     background-color: black;
     color: white;
-    background: url(../img/disco.jpg) no-repeat center center; }
+    background: url(../img/perry.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover; }
     #film video {
       display: none; }
     #film .text {
@@ -1450,7 +1458,12 @@ nav {
     height: 100%;
     background-color: black;
     color: white;
-    background: url(../img/disco.jpg) no-repeat center center; }
+    background: url(../img/perry.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover; }
     #film video {
       display: none; }
     #film .text {
@@ -1654,7 +1667,12 @@ nav {
     height: 100%;
     background-color: black;
     color: white;
-    background: url(../img/disco.jpg) no-repeat center center; }
+    background: url(../img/perry.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover; }
     #film video {
       display: none; }
     #film .text {

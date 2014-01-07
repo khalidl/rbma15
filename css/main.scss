@@ -532,12 +532,16 @@ textarea {
         iframe{
             opacity: 1;
             width: 100%;
-            display: none;
+            display: block;
+            z-index: 99999;
+            
         }
         video{
+            display: none;
             max-width: 150%;
             width: 150%;
             left: -50%;
+            z-index: 9;
         }
     }
 
@@ -1468,7 +1472,12 @@ textarea {
         height: 100%;
         background-color: black;
         color: white;
-        background: url(../img/disco.jpg) no-repeat center center;
+        background: url(../img/perry.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
         video{
             display: none;
         }
@@ -1818,7 +1827,12 @@ textarea {
         height: 100%;
         background-color: black;
         color: white;
-        background: url(../img/disco.jpg) no-repeat center center;
+        background: url(../img/perry.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
         video{
             display: none;
         }
@@ -2087,7 +2101,12 @@ textarea {
         height: 100%;
         background-color: black;
         color: white;
-        background: url(../img/disco.jpg) no-repeat center center;
+        background: url(../img/perry.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
         video{
             display: none;
         }
