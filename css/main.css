@@ -418,7 +418,7 @@ nav {
       margin-top: 2.5%;
       text-transform: uppercase; }
     #film .text img {
-      max-width: 20%;
+      max-width: 15%;
       margin-top: 5%;
       -webkit-transition: all .2s ease-in-out;
       -moz-transition: all .2s ease-in-out;
@@ -471,7 +471,7 @@ nav {
       margin-top: 0; }
   #book .foot {
     position: absolute;
-    bottom: 10%;
+    bottom: 7.5%;
     width: 40%;
     left: 30%;
     right: 30%; }
@@ -483,7 +483,7 @@ nav {
         #book .foot h2 a:hover {
           color: black; }
   #book .book-wrapper {
-    width: 200%;
+    width: 300%;
     height: 100%;
     position: absolute;
     left: 0;
@@ -497,15 +497,21 @@ nav {
       transition: all .1s ease; }
       #book .book-wrapper img.leftbook {
         position: absolute;
-        width: 20%;
-        left: 15%;
+        width: 15%;
+        left: 9.5%;
         top: 35%; }
       #book .book-wrapper img.rightbook {
-        width: 13%;
-        margin-left: 50%;
-        top: 34%; }
+        width: 8%;
+        left: 46%;
+        top: 34%;
+        position: absolute; }
+      #book .book-wrapper img.backbook {
+        top: 34%;
+        width: 15%;
+        position: absolute;
+        left: 76%; }
       #book .book-wrapper img:hover {
-        opacity: 0.8; }
+        opacity: 0.9; }
   #book p {
     margin: 5%;
     color: black;
@@ -731,7 +737,7 @@ nav {
           #book .foot h2 a:hover {
             color: black; }
     #book .book-wrapper {
-      width: 200%;
+      width: 300%;
       height: 100%;
       position: absolute;
       left: 0;
@@ -745,15 +751,21 @@ nav {
         transition: all .1s ease; }
         #book .book-wrapper img.leftbook {
           position: absolute;
-          width: 20%;
-          left: 15%;
-          top: 30%; }
+          width: 15%;
+          left: 9.5%;
+          top: 35%; }
         #book .book-wrapper img.rightbook {
-          width: 14%;
-          margin-left: 50%;
-          top: 30%; }
+          width: 8%;
+          left: 46%;
+          top: 34%;
+          position: absolute; }
+        #book .book-wrapper img.backbook {
+          top: 34%;
+          width: 15%;
+          position: absolute;
+          left: 76%; }
         #book .book-wrapper img:hover {
-          opacity: 0.8; }
+          opacity: 0.9; }
     #book p {
       margin: 5%;
       color: black;
@@ -900,7 +912,7 @@ nav {
       #film .text h2 {
         font-size: 1.5em; }
       #film .text img {
-        max-width: 20%;
+        max-width: 15%;
         margin-top: 5%;
         margin-bottom: 5%; }
     #film .film-wrap {
@@ -958,7 +970,7 @@ nav {
           #book .foot h2 a:hover {
             color: black; }
     #book .book-wrapper {
-      width: 200%;
+      width: 300%;
       height: 100%;
       position: absolute;
       left: 0;
@@ -972,15 +984,21 @@ nav {
         transition: all .1s ease; }
         #book .book-wrapper img.leftbook {
           position: absolute;
-          width: 26%;
-          left: 12%;
-          top: 35%; }
+          width: 15%;
+          left: 9.5%;
+          top: 40%; }
         #book .book-wrapper img.rightbook {
-          width: 17%;
-          margin-left: 53%;
-          top: 35%; }
+          width: 10%;
+          left: 45%;
+          top: 40%;
+          position: absolute; }
+        #book .book-wrapper img.backbook {
+          top: 40%;
+          width: 15%;
+          position: absolute;
+          left: 76%; }
         #book .book-wrapper img:hover {
-          opacity: 0.8; }
+          opacity: 0.9; }
     #book p {
       margin: 5%;
       color: black;
@@ -1211,10 +1229,10 @@ nav {
       #film .text h2 {
         font-size: 1.2em; }
       #film .text h3 {
-        margin-top: 25%; }
+        margin-top: 15%; }
       #film .text img {
         max-width: 15%;
-        margin-top: 25%; }
+        margin-top: 15%; }
         #film .text img:hover {
           opacity: 0.5; }
     #film .film-wrap {
@@ -1291,8 +1309,10 @@ nav {
           width: 20%;
           margin-left: 50%;
           top: 25%; }
+        #book .book-wrapper img.backbook {
+          display: none; }
         #book .book-wrapper img:hover {
-          opacity: 0.8; }
+          opacity: 0.9; }
     #book p {
       margin: 5%;
       color: black;
@@ -1490,7 +1510,7 @@ nav {
     #film video {
       display: none; }
     #film .text {
-      margin-top: 25%; }
+      margin-top: 15%; }
       #film .text h1 {
         font-size: 3em; }
       #film .text h2 {
@@ -1518,7 +1538,7 @@ nav {
     height: 100%;
     text-align: center; }
     #book .text {
-      margin-top: 25%;
+      margin-top: 15%;
       text-align: center;
       color: black; }
       #book .text h1 {
@@ -1572,8 +1592,10 @@ nav {
           width: 20%;
           margin-left: 50%;
           top: 25%; }
+        #book .book-wrapper img.backbook {
+          display: none; }
         #book .book-wrapper img:hover {
-          opacity: 0.8; }
+          opacity: 0.9; }
     #book p {
       margin: 5%;
       color: black;
@@ -1797,8 +1819,10 @@ nav {
           top: 40%; }
         #book .book-wrapper img.rightbook {
           display: none; }
+        #book .book-wrapper img.backbook {
+          display: none; }
         #book .book-wrapper img:hover {
-          opacity: 0.8; }
+          opacity: 0.9; }
     #book p {
       margin: 5%;
       color: black;

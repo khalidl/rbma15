@@ -345,8 +345,11 @@ Video background not fading out on video play button click
 		//get left position of right book element
 		var left_book_leftpos = getElementLeftTop(document.getElementById('leftbook'));
 
+		//make sure first image is visible if resized
 		if(win_width < 800){
-			return;
+			books.transition({
+				x: 0
+			}, 1000);
 		}
 
 		else{
@@ -357,12 +360,26 @@ Video background not fading out on video play button click
 				}, 2000);
 			}
 
+			else if (left_book_leftpos < 0 && left_book_leftpos > (-win_width * 1.5)){
+				books.transition({
+					x: -(win_width * 2)
+				}, 2000);
+			}
+
+			else if (left_book_leftpos < (-(win_width * 1.5))){
+				books.transition({
+					x: 0
+				}, 3000);
+			}
+
 			//otherwise, wrapper has already animated left
+			/*
 			else{
 				books.transition({
 					x: 0
 				}, 2000);
 			}
+			*/
 		}
 	}
 
@@ -419,7 +436,7 @@ Video background not fading out on video play button click
 	});
 
 	//startup book slide. can change speed slide interval speed here too
-	setInterval(slideBook, 8000);
+	setInterval(slideBook, 7000);
 	
 
 });
