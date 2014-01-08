@@ -49,7 +49,7 @@ Video background not fading out on video play button click
 										'id="rbmaplayer" width="' + width + '" height="' + height + '" ' +
 										'src="http://www.youtube.com/embed/uVzx_p_DrL8?enablejsapi=1&amp;origin=*&amp;autoplay=1&amp;loop=1&amp;hd=1&amp;' +
 										'controls=1&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;' +
-										'rel=0&amp;playlist=O8hi7CaqE8A"></iframe>');
+										'rel=0"></iframe>');
 		}
 
 		else {
@@ -59,7 +59,7 @@ Video background not fading out on video play button click
 										'id="rbmaplayer" width="' + width + '" height="' + height + '" ' +
 										'src="http://www.youtube.com/embed/uVzx_p_DrL8?enablejsapi=1&amp;origin=*&amp;autoplay=1&amp;loop=1&amp;hd=1&amp;' +
 										'controls=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;' +
-										'rel=0&amp;playlist=O8hi7CaqE8A"></iframe>');
+										'rel=0"></iframe>');
 		}
 		
 		target.find('iframe').show();
