@@ -137,8 +137,8 @@ textarea {
 
 
    @-moz-keyframes shake{
-    from {margin-top: -5%;}
-    to {margin-top: 5%;}
+    0% {margin-top: -5%;}
+    100% {margin-top: 5%;}
 }
 
    @-webkit-keyframes "shake"{
@@ -459,7 +459,7 @@ textarea {
        img{
         width: 50%;
         -webkit-animation: "shake" 0.5s ease 0 infinite alternate;
-        -moz-animation: shake 0.5s ease 0 infinite alternate;
+        -moz-animation: "shake" 0.5s ease 0 infinite alternate;
         -o-animation: shake 0.5s ease 0 infinite alternate;
         animation: shake 0.5s ease 0 infinite alternate;
         animation-delay: 0s;

@@ -110,10 +110,10 @@ a {
   outline: none; }
 
 @-moz-keyframes shake {
-  from {
+  0% {
     margin-top: -5%; }
 
-  to {
+  100% {
     margin-top: 5%; } }
 
 @-webkit-keyframes "shake" {
@@ -377,7 +377,7 @@ nav {
   #pointer img {
     width: 50%;
     -webkit-animation: "shake" 0.5s ease 0 infinite alternate;
-    -moz-animation: shake 0.5s ease 0 infinite alternate;
+    -moz-animation: "shake" 0.5s ease 0 infinite alternate;
     -o-animation: shake 0.5s ease 0 infinite alternate;
     animation: shake 0.5s ease 0 infinite alternate;
     animation-delay: 0s; }
