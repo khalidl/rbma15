@@ -1,4 +1,7 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <cross-domain-policy>
-<allow-access-from domain="*" />
+<allow-access-from domain="www.rbma15.com" />
+<allow-access-from domain="rbma15.com" />
+<allow-access-from domain="redbullmusicacademy.com" />
+<allow-access-from domain="www.redbullmusicacademy.com" />
 </cross-domain-policy>
